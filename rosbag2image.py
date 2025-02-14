@@ -35,6 +35,7 @@ class ImageCreator():
                             try:
                                 cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
                                 # cv_image = self.bridge.imgmsg_to_cv2(msg, "mono8")
+                                # cv_image = self.bridge.compressed_imgmsg_to_cv2(msg, "bgr8")
                             except CvBridgeError as e:
                                 print(e)
                             # cv_image_resized = cv2.resize(cv_image, dim)
@@ -49,6 +50,7 @@ class ImageCreator():
                             try:
                                 cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
                                 # cv_image = self.bridge.imgmsg_to_cv2(msg, "mono8")
+                                # cv_image = self.bridge.compressed_imgmsg_to_cv2(msg, "bgr8")
                             except CvBridgeError as e:
                                 print(e)
                             # cv_image_resized = cv2.resize(cv_image, dim)
